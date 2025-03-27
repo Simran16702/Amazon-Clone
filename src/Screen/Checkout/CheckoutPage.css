@@ -1,0 +1,210 @@
+.checkoutPage {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.checkoutPageLeft {
+    width: 70%;
+}
+
+.orderSummary {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.orderSummary h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.orderItems {
+    margin-top: 10px;
+}
+
+.orderItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.orderItemLeft {
+    display: flex;
+    gap: 15px;
+}
+
+.orderItemImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.orderItemDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.orderItemName {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.orderItemQuantity {
+    font-size: 14px;
+    color: #555;
+}
+
+.fulfilledByAmazon {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;  
+    margin-top: 8px;  
+}
+
+.fulfilledByAmazon img {
+    width: 40px;  
+    height: 40px;
+    margin-right: 10px;  
+    object-fit: contain;  
+}
+
+
+.orderItemPrice {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.orderTotal {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.paymentDetails {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.paymentDetails h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.paymentFormField {
+    margin-bottom: 20px;
+}
+
+.paymentFormField label {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.paymentFormField input,
+.paymentFormField select {
+    width: 98%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.placeOrderBtn {
+    background-color: #f0c14b;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.placeOrderBtn:hover {
+    background-color: #e2a900;
+}
+
+.checkoutPageRight {
+    width: 28%;
+}
+
+.orderSummaryRight {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.orderSummaryRight h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.orderTotalText {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.orderTotalPrice {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f0a500;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .checkoutPage {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .checkoutPageLeft, .checkoutPageRight {
+        width: 100%;
+    }
+
+    .orderSummary h2, .paymentDetails h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .orderItem {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .orderItemLeft {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .orderItemImage {
+        width: 70px;
+        height: 70px;
+    }
+
+    .orderTotal {
+        font-size: 16px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .placeOrderBtn {
+        font-size: 14px;
+        padding: 10px;
+        
+    }
+}

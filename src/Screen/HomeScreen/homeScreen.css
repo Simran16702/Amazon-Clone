@@ -1,0 +1,33 @@
+.homeScreen{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+    .homeScreen {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+}
+
+@media (max-width: 768px) {
+    .homeScreen {
+        padding: 15px;
+        border: none; 
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .homeScreen {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+    }
+}

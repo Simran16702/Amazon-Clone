@@ -1,0 +1,127 @@
+.homeBanner {
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.homeBannerimg {
+    height: 80vh;
+    width: 100%;
+    mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));
+}
+
+.grayBackgroundHomeBanner {
+    background-color: rgb(238, 235, 235);
+    height: 80vh;
+}
+
+.bannerArrow {
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.bannerArrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.leftArrow {
+    left: 10px;
+}
+
+.rightArrow {
+    right: 10px;
+}
+
+.homeBannerItemDiv{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    top: 22%;
+    padding: 0 20px;
+    position: absolute;
+}
+.homeBannerItemDivCard{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 343px;
+    box-sizing: border-box;
+    padding: 20px 0 15px;
+}
+.homeBannerItemDivCardTitle{
+    margin: 0 20px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.imgHomeBannerItemDivCard{
+    margin: 10px 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+.imgBannerHomeDiv{
+    height: 144px;
+    width: 144px;
+    display: flex;
+    flex-direction: column;
+}
+.imgBannerHomeDivImg{
+    width: 100%;
+}
+.imgBannerImgName{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.seeMoreHomeBanner{
+    margin: 0 20px;
+    font-size: 13px;
+    color: #007185;
+    font-weight: 600;
+}
+
+/*============Mobile View==============*/
+
+
+@media (max-width: 1024px) {
+    .homeBannerimg { height: 60vh; }
+    .homeBannerItemDiv { gap: 10px; }
+}
+
+@media (max-width: 768px) {
+    .homeBannerimg { height: 50vh; }
+    .bannerArrow { font-size: 1rem; padding: 6px; }
+    .homeBannerItemDiv {
+        overflow-x: auto;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .homeBannerItemDivCard { min-width: 220px; }
+}
+
+@media (max-width: 480px) {
+    .homeBannerimg { height: 40vh; }
+    .homeBannerItemDiv {
+        overflow-x: auto;
+        padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .homeBannerItemDivCard {
+        padding: 10px;
+        min-width: 200px;
+    }
+    .homeBannerItemDivCardTitle { font-size: 16px; }
+}

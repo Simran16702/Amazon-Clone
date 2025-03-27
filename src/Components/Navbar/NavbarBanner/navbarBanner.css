@@ -1,0 +1,104 @@
+.navbarBanner{
+    background-color: #232f3e;
+    
+    padding: 0 0 0 11px;
+    display: flex;
+    height: 39px;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbarBannerOptionsLeft{
+    display: flex;
+}
+.optionsNavbarBanner{
+    display: flex;
+    padding: 8px 9px;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid;
+        border-radius: 3px;
+    }
+}
+.allOptionsNavbarBanner {
+    font-size: 14px;
+    padding-left: 5px;
+    font-weight: 400;
+}
+  
+.dropdownMenu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 300px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    padding: 15px 0;
+}
+  
+.dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: rgb(16, 1, 1);
+}
+  
+.closeIcon {
+    cursor: pointer;
+}
+  
+.dropdownMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.dropdownItem {
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 14px;
+    font-weight: 500;
+}
+  
+.dropdownItem:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .navbarBanner {
+        flex-direction: column; 
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .navbarBannerOptionsLeft {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .optionsNavbarBanner {
+        padding: 10px;
+        font-size: 16px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .dropdownMenu {
+        width: 100%; 
+        left: 0;
+        top: 100%;
+    }
+}
+  

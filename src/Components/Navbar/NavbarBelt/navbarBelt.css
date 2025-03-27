@@ -1,0 +1,368 @@
+.navbarBelt{
+    background-color: #131921;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    color: white;
+    box-sizing: border-box;
+}
+.leftNavBelt{
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+
+}
+.leftNavBeltLogo{
+    width: 110px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 8px;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid;
+        border-radius: 3px;
+
+    }
+}
+.amazonLogoNavbar{
+    width: 97px;
+    height: 100%;
+}
+.navbar_inLogo{
+    margin-left: 2px;
+    font-weight: 400;
+}
+
+/* ------------------------------------ */
+
+.navbarBeltLocation{
+    display: flex;
+    gap: 5px;
+    padding: 8px;
+    height: 30px;
+    cursor: pointer;
+    &:hover{
+        border-radius: 3px;
+        border: 1px solid;
+    }
+    
+}
+.navbarBeltLocationImg{
+    width: 15px;
+    padding-top: 7px;
+
+}
+.navbarBeltLocationImgIcon{
+    margin-top: 3px;
+}
+.navbarBeltLocationPlace{
+    display: flex;
+    flex-direction: column;
+}
+.navbarBeltLocationTop{
+    font-size: 12px;
+    color: #ccc;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.navbarBeltLocationBottom{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 9px;
+}
+
+.navbarBeltSearchBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 4px;
+    width: 50%;
+}
+.navbarBeltSearchDiv{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #131921;
+
+}
+.navbarBeltSearchBoxAll{
+    display: flex;
+    background-color: #cdcdcd;
+    gap: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    color: #4d4747;
+}
+.navbarBeltSearchBoxAllText{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* -------------------------- */
+
+.navbarBeltInputSearchBox{
+    padding: 5px;
+    width: 84%;
+    &::placeholder{
+        color: rgb(43, 38, 38);
+        font-size: 15px;
+        font-weight: 500;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+
+/* ---------------------- */
+
+.searchIconNavbarBelt{
+    background-color: #febd69;
+    font-size: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: #f1ba73;
+    }
+}
+
+.searchIconNavbarBeltIcon{
+    font-size: 20px;
+    color: black;
+}
+
+/* --------------------------------- */
+
+
+.rightSideNavbarBelt{
+    padding: 10px;
+    color: white;
+    display: flex;
+    gap: 1px;
+}
+.indianFlagCode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding: 8px;
+    gap: 5px;
+    cursor: pointer;
+    height: 30px;
+    &:hover{
+        border-radius: 3px;
+        border: 1px solid;
+    }
+}
+.indiaFlag{
+    width: 20px;
+    height: 20px;
+
+}
+.indiaCodeNavbarBelt{
+    font-size: 14px;
+    display: flex;
+    line-height: 10px;
+    align-items: center;
+    font-weight: 700;
+}
+.indiaCodeNavbarBeltDrp{
+    color: #ccc;
+}
+
+.helloSignInNavbaeBelt{
+    display: flex;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    flex-direction: column;
+    height: 30px;
+    padding: 8px;
+    cursor: pointer;
+    &:hover{
+        border-radius: 3px;
+        border: 1px solid;
+    }
+}
+.helloSignInNavbaeBelt:hover {
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.helloTopNavbarBelt{
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+
+.cartTitle{
+    font-size: 14px;
+    font-weight: 700;
+}
+.cartItemNumberNavbarBelt{
+    position: absolute;
+    bottom: 70%;
+    left: 22%;
+    color:#febd69 ;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/*************Mobile View*******************/
+
+@media (max-width: 1024px) {
+    .navbarBelt {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .leftNavBelt {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbarBeltSearchBox {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .navbarBeltSearchDiv {
+        height: 35px;
+    }
+
+    .navbarBeltInputSearchBox {
+        width: 70%;
+    }
+
+    .rightSideNavbarBelt {
+        width: 100%;
+        justify-content: space-between;
+        padding: 5px 0;
+    }
+
+    .indianFlagCode {
+        display: none; 
+    }
+
+    .cartItemNumberNavbarBelt {
+        left: 18%;
+        bottom: 75%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbarBelt {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .leftNavBelt {
+        justify-content: center;
+        gap: 15px;
+        padding: 5px 0;
+    }
+
+    .navbarBeltLocation {
+        display: none; 
+    }
+
+    .navbarBeltSearchBox {
+        width: 100%;
+    }
+
+    .navbarBeltSearchDiv {
+        height: 35px;
+    }
+
+    .navbarBeltInputSearchBox {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .searchIconNavbarBelt {
+        padding: 8px;
+    }
+
+    .rightSideNavbarBelt {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .helloSignInNavbaeBelt {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .cartTitle {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbarBelt {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .leftNavBelt {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .amazonLogoNavbar {
+        width: 80px;
+    }
+
+    .navbarBeltSearchBox {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .navbarBeltSearchDiv {
+        height: 30px;
+    }
+
+    .navbarBeltInputSearchBox {
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .searchIconNavbarBelt {
+        padding: 5px;
+    }
+
+    .rightSideNavbarBelt {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .helloSignInNavbaeBelt {
+        font-size: 10px;
+    }
+
+    .cartItemNumberNavbarBelt {
+        font-size: 12px;
+    }
+}
+
